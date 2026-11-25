@@ -1,17 +1,18 @@
 """Write the account's own make.fun username to /output/entry.txt.
 
-The entry is exactly one word: the make.fun handle "locago-creative"
-(15 characters, within the 1-30 gate). No explanation, no links, no pitch —
+The entry is exactly one word: the make.fun handle "Snaccident"
+(10 characters, within the 1-30 gate). No explanation, no links, no pitch --
 the username alone is the whole entry. Stdlib only, no network,
 deterministic: the same bytes on every run.
 """
 
 import os
 
-USERNAME = "locago-creative"
-# "locago-creative" is the entrant's own make.fun handle (@locago-creative),
-# 15 characters: "locago" (the LocaGo brand) + "creative". One word, no
-# spaces, no padding, no gloss — exactly what the judge asks for.
+USERNAME = "Snaccident"
+# "Snaccident" is the entrant's own make.fun handle (@Snaccident):
+# "snack" + "accident" -- eating all the snacks by accident, a joke that
+# lands in half a second with no explanation. One true word, no spaces,
+# no hyphen, no padding, no gloss -- exactly what the judge asks for.
 
 assert 1 <= len(USERNAME) <= 30, "entry must be 1-30 characters"
 assert USERNAME.split() == [USERNAME], "entry must be a single word"
